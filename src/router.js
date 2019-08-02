@@ -8,10 +8,7 @@ import Register from './components/Auth/Register'
 import List from './components/App/List'
 import Detail from './components/App/Detail'
 import Dashboard from './components/App/Dashboard'
-import File from './components/App/Sections/File/File'
 import Create from './components/App/Create'
-import FileCreate from './components/App/Sections/File/Create'
-import PortfolioCreate from './components/App/Sections/Portfolio/Create'
 
 Vue.use(Router)
 
@@ -21,7 +18,7 @@ export default new Router({
     {
       path: '/',
       name: 'overview',
-      component: Overview,
+      component: Login,
     },
     {
       path: '/auth',
@@ -48,35 +45,10 @@ export default new Router({
           component: Dashboard
         },
         {
-          path: 'files',
-          component: File,
-        },
-        {
           path: ':collection',
           component: List,
           props: route => ({
             collection: route.params.collection
-          })
-        },
-        {
-          path: 'files/create',
-          component: FileCreate,
-          props: route => ({
-            collection: 'Files'
-          })
-        },
-        {
-          path: 'assets/create',
-          component: FileCreate,
-          props: route => ({
-            collection: 'Assets'
-          })
-        },
-        {
-          path: 'portfolios/create',
-          component: PortfolioCreate,
-          props: route => ({
-            collection: 'Portfolios'
           })
         },
         {

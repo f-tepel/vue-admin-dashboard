@@ -1,17 +1,17 @@
 exports.getListConfig = function (listType) {
-  if (listType === 'strategies') {
+  if (listType === 'car') {
     return [
       {
         name: 'name',
         type: 'string'
       },
       {
-        name: 'shortName',
+        name: 'brand',
         type: 'string'
       },
       {
-        name: 'created',
-        type: 'date'
+        name: 'ps',
+        type: 'number'
       }
     ]
   } else if (listType === 'keys') {
@@ -28,85 +28,6 @@ exports.getListConfig = function (listType) {
         name: 'baseURL',
         type: 'string'
       }
-    ]
-  } else if (listType === 'portfolios') {
-    return [
-      {
-        name: 'name',
-        type: 'string'
-      },
-      {
-        name: 'created',
-        type: 'date'
-      }
-    ]
-  } else if (listType === 'trades') {
-    return [
-      {
-        name: 'symbol',
-        type: 'string'
-      },
-      {
-        name: 'action',
-        type: 'string'
-      },
-      {
-        name: 'created',
-        type: 'date'
-      }
-    ]
-  } else if (listType === 'assets') {
-    return [
-      {
-        name: 'name',
-        type: 'string'
-      },
-      {
-        name: 'region',
-        type: 'string'
-      },
-      {
-        name: 'short',
-        type: 'string'
-      },
-      {
-        name: 'long',
-        type: 'string'
-      }
-    ]
-  } else if (listType === 'files') {
-    return [
-      {
-        name: 'name',
-        type: 'string'
-      },
-      {
-        name: 'region',
-        type: 'string'
-      },
-      {
-        name: 'short',
-        type: 'string'
-      },
-      {
-        name: 'long',
-        type: 'string'
-      }
-    ]
-  } else if (listType === 'portfoliovalues') {
-    return [
-      {
-        name: 'portfolio',
-        type: 'string'
-      },
-      {
-        name: 'value',
-        type: 'number'
-      },
-      {
-        name: 'created',
-        type: 'date'
-      },
     ]
   }
 }

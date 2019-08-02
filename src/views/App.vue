@@ -23,7 +23,7 @@
   </v-navigation-drawer>
   <v-toolbar color="#102027" dark fixed app>
     <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-    <v-toolbar-title>FTI - Algorithms</v-toolbar-title>
+    <v-toolbar-title>Vue-Admin-Dashboard</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn flat @click="logout()">Logout</v-btn>
 </v-toolbar>
@@ -40,7 +40,7 @@
     </v-container>
   </v-content>
   <v-footer color="#102027" app inset>
-    <span class="white--text">&copy; 2019 - FTI Algorithms</span>
+    <span class="white--text">&copy; 2019 - Vue-Admin-Dashboard</span>
   </v-footer>
 </v-app>
 </template>
@@ -53,7 +53,7 @@
     data () {
       return {
         drawer: false,
-        objects: ['Assets', 'Portfolios', 'Strategies', 'PortfolioValues', 'Trades', 'Keys', 'Files']
+        objects: ['Car', 'House', 'Computer']
       }
     },
     methods: {

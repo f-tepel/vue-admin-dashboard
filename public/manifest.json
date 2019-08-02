@@ -1,6 +1,6 @@
 {
-  "name": "FTI",
-  "short_name": "FTI",
+  "name": "Admin-Dashboard",
+  "short_name": "AD",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
